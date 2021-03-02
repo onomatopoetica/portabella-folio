@@ -11,8 +11,8 @@
 1. [License](#License)
 
 ## Project Links
-[GitHub Project Link](https://onomatopoetica.github.io/portfolio/)<br>
-[Repo Link](https://github.com/onomatopoetica/portfolio)
+[GitHub Project Link](https://onomatopoetica.github.io/portabella-folio/)<br>
+[Repo Link](https://github.com/onomatopoetica/portabella-folio)
 
 ## About The Project
 
