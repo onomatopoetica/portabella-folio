@@ -194,31 +194,39 @@ a.back-to-top {
 }
   
 /* Larger screens */
-@media (max-width: 2000px) and (min-width: 900px) {
+@media (max-width: 2000px) and (min-width: 1000px) {
     #projects li {
         width:50%;
     }
 }
 
-/* @media (max-width: 700px) {
+/* Medium screens */
+@media (min-width: 700px) and (max-width: 999px) {
+    /* Typewriter effect */
+    .typewriter p {
+        font-size: 1.25rem;        
+    }
+    
     #projects li {
         width:50%;
     }
-} */
-
-/* Smaller screens */
-@media (max-width: 899px) {
     .text {
         font-size: 14px;
     }
-    
+}
+
+/* Smaller screens */
+@media (max-width: 699px) {
+    /* Typewriter effect */
+    .typewriter p {
+        font-size: .90rem;
+    }
+        
     #projects li {
         width:100%;
     }
 
-    /* Typewriter effect */
-    .typewriter p {
-    font-size: .90rem;
-
+    .text {
+        font-size: 14px;
     }
 }
