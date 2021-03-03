@@ -6,11 +6,13 @@ html, body {
     height: 100%;
     max-width: 2000px;
 }
-  body {
+
+body {
     display: flex;
     flex-direction: column;
 }
-  .content {
+
+.content {
     flex: 1 0 auto;
 }
 
@@ -70,7 +72,7 @@ html, body {
 
 #projects {
     max-width:2000px;
-    margin:0 auto; /* center aligned */
+    margin: auto; /* center aligned */
     padding:0;
     font-size:0; /* change to normal font size if have captions */
     list-style:none;
@@ -137,12 +139,8 @@ html, body {
     left:0;
     width:100%;
     text-align:center;
-    /* text-transform:capitalize; */
     font-size:18px;
-    /* font-weight:bold; */
-    /* font-family: 'Oswald', sans-serif; */
-    /* font-weight:normal!important; */
-    top:30%;
+    top:40%;
     color: #000;
     opacity:0;
     filter:alpha(opacity=0);/* For older IE */
@@ -194,14 +192,18 @@ a.back-to-top {
 }
   
 /* Larger screens */
-@media (max-width: 2000px) and (min-width: 1000px) {
+@media (max-width: 2000px) and (min-width: 1300px) {
     #projects li {
-        width:50%;
+        width:25%;
+    }
+
+    .text {
+        font-size: 14px;
     }
 }
 
 /* Medium screens */
-@media (min-width: 700px) and (max-width: 999px) {
+@media (min-width: 800px) and (max-width: 1299px) {
     /* Typewriter effect */
     .typewriter p {
         font-size: 1.25rem;        
@@ -210,13 +212,14 @@ a.back-to-top {
     #projects li {
         width:50%;
     }
+
     .text {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
 /* Smaller screens */
-@media (max-width: 699px) {
+@media (max-width: 799px) {
     /* Typewriter effect */
     .typewriter p {
         font-size: .90rem;
@@ -227,6 +230,6 @@ a.back-to-top {
     }
 
     .text {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
