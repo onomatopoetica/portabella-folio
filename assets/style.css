@@ -66,6 +66,24 @@ body {
     50% { border-color: orange }
 }
 
+#highlight {
+    background: url(./purple.png);
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+    padding: 50px 50px;
+    font-size: 24px;
+   
+}
+
+#highlight2 {
+    background: url(./purple2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+    padding: 50px 50px;
+    font-size: 24px;
+   
+}
+
 .summary {
     font-size: 17px;
 }
