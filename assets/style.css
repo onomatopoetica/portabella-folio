@@ -45,7 +45,7 @@ body {
     font-family: monospace;
     font-size: 2rem;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
+    border-right: .15em solid #FFA500; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives scrolling effect as typing occurs */
     letter-spacing: .15em; 
@@ -63,7 +63,7 @@ body {
 /* Typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: orange }
+    50% { border-color: #FFA500 }
 }
 
 #highlight {
@@ -80,6 +80,15 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 95%;
     padding: 50px 50px;
+    font-size: 24px;
+   
+}
+
+#highlight3 {
+    background: url(./purple3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+    padding: 30px 30px;
     font-size: 24px;
    
 }
@@ -172,7 +181,7 @@ body {
 
 /* Back to top */
 .back-to-top {
-    background-color: #000000;
+    background-color: #4B0082;
     color: #FFFFFF;
     opacity: 0;
     transition: opacity .6s ease-in-out;
@@ -224,7 +233,7 @@ a.back-to-top {
 @media (min-width: 800px) and (max-width: 1299px) {
     /* Typewriter effect */
     .typewriter p {
-        font-size: 1.25rem;        
+        font-size: 1.75rem;        
     }
     
     #projects li {
