@@ -1,5 +1,5 @@
-* {
-    font-family: 'Oswald', sans-serif;
+span, h1, h2, h4, h6, p {
+    font-family: "Montserrat", sans-serif;
 }
 
 html, body {
@@ -90,6 +90,14 @@ body {
     font-size: 24px;
 }
 
+#highlight4 {
+    background: url(./purple4.png);
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+    padding: 30px 30px;
+    font-size: 24px;
+}
+
 .summary {
     font-size: 17px;
 }
@@ -144,7 +152,7 @@ body {
     bottom: 0;
     right: 0;
     margin: auto;
-    background: #FFF;
+    background: #DDA0DD;
     background-size:50px 50px;
     opacity:0;
     filter:alpha(opacity=0);/* For IE6 - IE8 */
@@ -176,9 +184,20 @@ body {
     opacity:0.9;
 }
 
+.btn {
+    background-color: #681768;
+   
+    color: #FFF;
+}
+
+.btn:hover {
+    background-color: #7c517c;
+    color: #FFF;
+}
+
 /* Back to top */
 .back-to-top {
-    background-color: #4B0082;
+    background-color: #681768;
     color: #FFFFFF;
     opacity: 0;
     transition: opacity .6s ease-in-out;
@@ -188,8 +207,9 @@ body {
     bottom: 20px;
     width: 50px;
     height: 50px;
+    box-shadow: 1px 1px #c1bfc1;
     box-sizing: border-box;
-    border-radius: 0%;
+    border-radius: 8%;
 }
 
 a.back-to-top {
@@ -205,6 +225,7 @@ a.back-to-top {
 
 .back-to-top:hover, .back-to-top:focus, .back-to-top:visited {
     color: #FFFFFF;
+    background-color: #681768;
 }
 
 .back-to-top.show {
