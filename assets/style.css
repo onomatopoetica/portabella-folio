@@ -86,7 +86,7 @@ body {
     background: url(./purple3.png);
     background-repeat: no-repeat;
     background-size: 100% 95%;
-    padding: 30px 30px;
+    padding: 40px 40px;
     font-size: 24px;
 }
 
@@ -94,7 +94,15 @@ body {
     background: url(./purple4.png);
     background-repeat: no-repeat;
     background-size: 100% 95%;
-    padding: 30px 30px;
+    padding: 40px 40px;
+    font-size: 24px;
+}
+
+#highlight5 {
+    background: url(./purple5.png);
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+    padding: 50px 50px;
     font-size: 24px;
 }
 
@@ -193,6 +201,10 @@ body {
 .btn:hover {
     background-color: #7c517c;
     color: #FFF;
+}
+
+.skills {
+    background-color: #c799c7;   
 }
 
 /* Back to top */
