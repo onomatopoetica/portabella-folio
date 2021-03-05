@@ -47,11 +47,6 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -70,7 +65,92 @@
                 </div>
             </nav>
         </div>
+
+        <div class="header">
+            <div class="jumbotron jumbotron-fluid text-center" style="background-color: #DDA0DD;">
+                <div class="container">
+                    <h1 class="leadTitle">Jennifer Bates</h1>
+                    <div class="typewriter">
+                        <p class="lead subTitle">Web Developer + Project Manager</p>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Creative side summary -->
+
+        <section>
+            <div class="container-fluid mt-5 mb-5">
+                <span id="highlight5">Freelance Passion Project</span>
+                <div class="freelanceSummary text-justify mt-5">
+                    <p>As for my creative side, I am an amateur photographer and painter.
+                        A
+                        couple of years ago I started creating
+                        art to memorialize and celebrate pets. It began when a friend on Instagram reached out to me for
+                        ideas
+                        on how she
+                        could memorialize a family friend's pup that had just passed. The photos I was given of the
+                        sweet
+                        pup
+                        were low resolution so
+                        I decided to overlay a watercolor of her over a photo background of butterflies and sunflowers.
+                        The
+                        family loved the piece so much
+                        they framed it! Click the 'See Pup!' button to see the
+                        final art piece.</p><br>
+
+                    <!-- Watercolor pup modal -->
+
+                    <div class="w3-container text-center">
+                        <button onclick="document.getElementById('popupPup').style.display='block'" class="btn"
+                            style="font-weight: 600;">See
+                            Pup!</button>
+                        <div id="popupPup" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-zoom">
+                                <div class="w3-container">
+                                    <span onclick="document.getElementById('popupPup').style.display='none'"
+                                        class="btn w3-xxlarge w3-display-topleft">&times;</span>
+                                    <img class="watercolorPup" src="./assets/wWaterColor.png"
+                                        alt="watercolor pup sunflower and butterflies" width="100%" height="100%" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <p>Since that first art project, I've been asked to do more than 50 pieces for everything from pet
+                        memorials, to pet
+                        birthdays, to celebrating achievements in training certifications. Click the 'Freelance Work'
+                        panel
+                        below to
+                        see my work. Can you guess which one is my own pup? </p>
+                </div>
+            </div>
+
+            <!-- Freelance accordion -->
+
+            <button class="accordion pb-3 pr-1" style="font-size: 1.25rem;"> Freelance Work</button>
+            <div class="panel">
+                <div class="grid-container" style="max-width: 100%; text-align: center;">
+                    <div class="item1">
+                        <img src="./assets/Butterflies.png" alt="Butterflies" />
+                    </div>
+                    <div class="item2">
+                        <img src="./assets/Zeus2.png" alt="doberman and butterfly" />
+                    </div>
+                    <div class="item3">
+                        <img src="./assets/Luxe2.png" alt="doberman and tulips" />
+                    </div>
+                    <div class="item4">
+                        <img src="./assets/Unicorn.png" alt="doberman with rainbow unicorn horn" />
+                    </div>
+                </div>
+            </div>
         </section>
+        <br>
+
 
         <!-- Footer -->
 
