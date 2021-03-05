@@ -129,7 +129,7 @@ body {
 }
         
 /* Wrapper for each item */
-.cell {
+.cell, .item1, .item2, .item3, .item4 {
     margin: 2px;
     box-shadow:0 0 8px rgba(0,0,0,0.3);
     display:block;
@@ -207,13 +207,11 @@ body {
 } */
 
 /* Modal padding */
-
 div.w3-container {
     padding: 0;
 }
   
 .buttonText {
-    font-family: 'Raleway', sans-serif;
     font-size: 1.25rem;
     padding-left: 70px;
     padding-right: 70px;
@@ -223,11 +221,12 @@ div.w3-container {
   
 button.accordion {
     background-color: #7c277c;
+    border-color: #7c277c;
 }
 
 .accordion {
-    font-family: 'Raleway', sans-serif;
     background-color: #7c277c;
+    border-color: #7c277c;
     color: #FFF;
     cursor: pointer;
     padding: 18px;
@@ -237,6 +236,7 @@ button.accordion {
     outline: none;
     font-size: 15px;
     transition: 0.4s;
+    outline: none !important;
 }
    
 .accordion:after {
@@ -259,8 +259,10 @@ div.panel {
   
 .active, .accordion:hover {
     background-color: #7c517c;
+    border-color: #7c277c;
+    outline: none !important;
 }
-  
+
 .panel {
     padding: 0 18px;
     background-color: white;
