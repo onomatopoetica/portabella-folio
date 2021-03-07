@@ -130,7 +130,7 @@ div.jumbotron {
         
 /* Wrapper for each item */
 .cell, .item1, .item2, .item3, .item4 {
-    margin: 2px;
+    margin: 5px;
     box-shadow:0 0 8px rgba(0,0,0,0.6);
     display:block;
     position: relative;
@@ -171,8 +171,9 @@ div.jumbotron {
 }
 
 .rocket, span.text {
-    font-size: 24px;
+    font-size: 16px;
     color: #FFFFFF;
+    text-align: center;
 }
 
 /* For captions */
@@ -361,8 +362,11 @@ a.back-to-top {
         width:25%;
     }
 
-    .text {
-        font-size: 14px;
+    .rocket, span.text {
+        font-size: 16px;
+        color: #FFFFFF;
+        text-align: center;
+        top: 10%;
     }
 
     .grid-container {
