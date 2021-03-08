@@ -42,6 +42,7 @@ div.jumbotron {
 /* Typewriter effect */
 .typewriter p {
     color: #000;
+    width: 24em;
     font-family: monospace;
     font-size: 2rem;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -50,14 +51,14 @@ div.jumbotron {
     margin: 0 auto; /* Gives scrolling effect as typing occurs */
     letter-spacing: .15em; 
     animation: 
-      typing 3.5s steps(33, end),
-      blink-caret .5s step-end infinite;
+      typing 3.5s steps(33),
+      blink-caret .5s step-end infinite normal;
 }
   
 /* Typing effect */
   @keyframes typing {
     from { width: 0 }
-    to { width: 100% }
+    to { width: 24em }
 }
   
 /* Typewriter cursor effect */
