@@ -16,7 +16,7 @@ body {
     flex: 1 0 auto;
 }
 
-div.jumbotron {
+.jumbotron {
     background-size: cover;
     background-image: linear-gradient( rgba(255,255,255,0.0) 0%,rgba(255,255,255,0.9) 100%), 
     url(./pages/pastelbutterfly.png);
@@ -341,7 +341,7 @@ a.back-to-top {
     }
 
     /* Overlay */
-    .rocket, span.text {
+    span.text {
         font-size: 20px;
         color: #FFFFFF;
         text-align: center;
@@ -378,7 +378,7 @@ a.back-to-top {
     }
 
     /* Overlay */
-    .rocket, span.text {
+    span.text {
         font-size: 18px;
         color: #FFFFFF;
         text-align: center;
@@ -403,7 +403,7 @@ a.back-to-top {
     }
 
     /* Overlay */
-    .rocket, span.text {
+    span.text {
         font-size: 18px;
         color: #FFFFFF;
         text-align: center;
