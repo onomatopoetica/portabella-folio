@@ -1,0 +1,254 @@
+span, h1, h2, h4, h6, p {
+    font-family: "Montserrat", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    max-width: 2000px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+div.jumbotron {
+    background-size: cover;
+    background-image: linear-gradient( rgba(255,255,255,0.0) 0%,rgba(255,255,255,0.9) 100%), 
+    url(./pages/greenbutterfly.png);
+    height: 400px;
+    width: auto;
+}
+
+/* Typewriter effect */
+.typewriter p {
+    color: #000;
+    width: 24em;
+    font-family: monospace;
+    font-size: 2rem;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #FFA500; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives scrolling effect as typing occurs */
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(33),
+      blink-caret .5s step-end infinite normal;
+}
+  
+/* Typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 24em }
+}
+  
+/* Typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #FFA500 }
+}
+
+#highlight {
+    background: url(./pages/cloudheart.png);
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    padding-right: 30px;
+    padding-left: 20px;
+    margin: -10px;
+    font-size: 24px;
+}
+
+#highlightheart {
+    background: url(./pages/heart.png);
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 60px;
+    padding-left: 50px;
+    margin: -50px;
+    font-size: 24px;
+}
+
+.summary {
+    font-size: 17px;
+}
+
+a.onomatopoetica {
+    color: #469ad2;
+}
+
+a.onomatopoetica:hover   {
+    color: #82c5f2;
+}
+
+/* All buttons */
+.btn {
+    background-color: #2f89c4;
+    color: #FFFFFF;
+}
+
+.btn:hover {
+    background-color: #4fa4dd;
+    color: #FFFFFF;
+}
+
+/* .skills, .tools {
+    background-color: #c799c7;   
+} */
+
+/* Back to top */
+.back-to-top, .back-to-top:focus, .back-to-top:visited {
+    background-color: #2f89c4;
+    color: #FFFFFF;
+    opacity: 0;
+    transition: opacity .6s ease-in-out;
+    z-index: 999;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 1px #137bc0;
+    box-sizing: border-box;
+    border-radius: 8%;
+}
+
+a.back-to-top {
+    font-weight: 1000;
+    letter-spacing: 2px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.6;
+    padding-left: 2px;
+    padding-top: 14px;
+}
+
+.back-to-top:hover {
+    color: #FFFFFF;
+    background-color: #4fa4dd;
+}
+
+.back-to-top.show {
+    opacity: 1;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+  
+/* Larger screens */
+@media (max-width: 2000px) and (min-width: 1300px) {
+    p.lead.subTitle {
+        margin-top: 150px;
+    }
+    
+    #projects li {
+        width:33%;
+    }
+
+    /* Overlay */
+    .rocket, span.text {
+        font-size: 20px;
+        color: #FFFFFF;
+        text-align: center;
+        top: 25%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-gap: 20px;
+        padding: 100px;
+        grid-template-rows: 300px 300px;
+      }
+}
+
+/* Medium screens */
+@media (min-width: 800px) and (max-width: 1299px) {
+    .jumbotron {
+        max-height: 300px;
+        max-width: auto;
+    }
+
+    p.lead.subTitle {
+        margin-top: 100px;
+    }
+
+    /* Typewriter effect */
+    .typewriter p {
+        font-size: 1.75rem;        
+    }
+    
+    #projects li {
+        width:50%;
+    }
+
+    /* Overlay */
+    .rocket, span.text {
+        font-size: 18px;
+        color: #FFFFFF;
+        text-align: center;
+        top: 30%;
+    }
+}
+
+/* Smaller screens */
+@media (max-width: 799px) {
+    .jumbotron {
+        max-height: 150px;
+        max-width: auto;
+    }
+    
+    /* Typewriter effect */
+    .typewriter p {
+        font-size: .90rem;
+    }
+        
+    #projects li {
+        width:100%;
+    }
+
+    /* Overlay */
+    .rocket, span.text {
+        font-size: 18px;
+        color: #FFFFFF;
+        text-align: center;
+        top: 30%;
+    } 
+
+    .grid-container {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 40px;
+        grid-template-rows: 300px 300px 300px 300px;
+    }
+  
+      .item1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+      
+      .item2 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+      
+      .item3 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+  
+      .item4 {
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+}

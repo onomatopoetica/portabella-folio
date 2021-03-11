@@ -16,7 +16,7 @@
     <!-- Favicon -->
     <link rel="icon" href="./assets/favicon.ico" type="image/png" sizes="16x16">
     <!-- Local CSS -->
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/artwork.css" />
     <title>Jennifer Bates Portfolio</title>
 </head>
 
@@ -35,11 +35,7 @@
                 <!-- Container for navbar brand -->
 
                 <div class="container-fluid">
-                    <span id="highlight3"><a class="navbar-brand">Hi. It's nice to meet you!
-                            <svg class="heart" viewBox="0 0 32 29.6">
-                                <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
-                            c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
-                            </svg>
+                    <span id="highlight"><a class="navbar-brand">Hi. It's nice to meet you!
                         </a></span>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -50,11 +46,11 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a id="aboutMeNav" class="nav-link" href="index.html">About</a>
+                            <a id="aboutMeNav" class="nav-link" href="index.html">Portfolio</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a id="portfolioNav" class="nav-link" href="portfolio.html">Portfolio</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a id="contactNav" class="nav-link" href="contact.html">Contact</a>
                         </li>
@@ -82,57 +78,60 @@
 
         <!-- Creative side summary -->
 
-        <section>
-            <div class="container-fluid mt-5 mb-5">
-                <span id="highlight5">Passion Project</span>
-                <div class="freelanceSummary text-justify mt-5">
-                    <p>As for my creative side, I am an amateur photographer and painter.
-                        A
-                        couple of years ago I started creating
-                        art to memorialize and celebrate pets. It began when a friend on Instagram reached out to me for
-                        ideas
-                        on how she
-                        could memorialize a family friend's pup that had just passed. The photos I was given of the
-                        sweet
-                        pup
-                        were low resolution so
-                        I decided to overlay a watercolor of her over a photo background of butterflies and sunflowers.
-                        The
-                        family loved the piece so much
-                        they framed it! Click the 'See Pup!' button to see the
-                        final art piece.</p><br>
+        <div class="freelanceFolio">
+            <div class="container-fluid">
+                <span id="highlightheart">Artwork</span>
+                <br>
+                <!-- <div class="freelanceSummary text-justify mt-5"> -->
+                <p class="summary text-justify mt-5">As for my creative side, I am an amateur photographer
+                    and painter.
+                    A
+                    couple of years ago I started creating
+                    art to memorialize and celebrate pets. It began when a friend on Instagram reached out to me for
+                    ideas
+                    on how she
+                    could memorialize a family friend's pup that had just passed. The photos I was given of the
+                    sweet
+                    pup
+                    were low resolution so
+                    I decided to overlay a watercolor of her over a photo background of butterflies and sunflowers.
+                    The
+                    family loved the piece so much
+                    they framed it! Click the 'See Pup!' button to see the
+                    final art piece.</p><br>
 
-                    <!-- Watercolor pup modal -->
+                <!-- Watercolor pup modal -->
 
-                    <div class="w3-container text-center">
-                        <button onclick="document.getElementById('popupPup').style.display='block'" class="btn"
-                            style="box-shadow: 1px 1px #7c517c;" type="button">See
-                            Pup!</button>
-                        <div id="popupPup" class="w3-modal">
-                            <div class="w3-modal-content w3-animate-zoom">
-                                <div class="pupContainer">
-                                    <span onclick="document.getElementById('popupPup').style.display='none'"
-                                        class="btn w3-xxlarge w3-display-topleft">&times;</span>
-                                    <img class="watercolorPup" src="./assets/artwork/wWaterColor.png"
-                                        alt="watercolor pup sunflower and butterflies" width="100%" height="100%" />
-                                </div>
+                <div class="w3-container text-center">
+                    <button onclick="document.getElementById('popupPup').style.display='block'" class="btn"
+                        style="box-shadow: 1px 1px #137bc0;" type="button">See
+                        Pup!</button>
+                    <div id="popupPup" class="w3-modal">
+                        <div class="w3-modal-content w3-animate-zoom">
+                            <div class="pupContainer">
+                                <span onclick="document.getElementById('popupPup').style.display='none'"
+                                    class="btn w3-xxlarge w3-display-topleft">&times;</span>
+                                <img class="watercolorPup" src="./assets/artwork/wWaterColor.png"
+                                    alt="watercolor pup sunflower and butterflies" width="100%" height="100%" />
                             </div>
                         </div>
                     </div>
-                    <br>
-                    <br>
-                    <p>Since that first art project, I've been asked to do more than 50 pieces for everything from pet
-                        memorials, to pet
-                        birthdays, to celebrating achievements in training certifications. Click the 'Freelance Work'
-                        panel
-                        below to
-                        see my work. Can you guess which one is my own pup? </p>
                 </div>
+                <br>
+                <br>
+                <p class="summary">Since that first art project, I've been asked to do more than 50 pieces for
+                    everything from pet
+                    memorials, to pet
+                    birthdays, to celebrating achievements in training certifications. Click the 'Freelance Work'
+                    panel
+                    below to
+                    see my work. Can you guess which one is my own pup? </p>
+                <!-- </div> -->
             </div>
 
             <!-- Freelance accordion -->
 
-            <button class="accordion pb-3 pr-1" style="font-size: 1.25rem; box-shadow: 1px 1px #7c517c;"
+            <button class="accordion pb-3 pr-1" style="font-size: 1.25rem; box-shadow: 1px 1px #137bc0;"
                 type="button">Freelance Work</button>
             <div class="panel">
                 <div class="grid-container" style="max-width: 100%; text-align: center;">
@@ -150,7 +149,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <br>
 
 
