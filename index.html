@@ -14,7 +14,7 @@
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/792cbaa3d1.js" crossorigin="anonymous"></script>
     <!-- Favicon -->
-    <link rel="icon" href="./assets/favicon.ico" type="image/png" sizes="16x16">
+    <link rel="icon" href="./favicon.ico" type="image/png" sizes="32x32">
     <!-- Local CSS -->
     <link rel="stylesheet" href="./assets/style.css" />
     <title>Jennifer Bates Portfolio</title>
@@ -225,8 +225,11 @@
                             <span class="overlay">
                                 <span class="text align-center">
                                     <p><b>CODE QUIZ</b></p><br>
-                                    <p class="project text-justify">A code quiz project for full stack web development
-                                        students to test their knowledge of JavaScript fundamentals.</p><br>
+                                    <p class="project text-justify">This quiz app gives students 75 seconds to
+                                        take a JavaScript code quiz testing their knowledge of the
+                                        fundamentals. The app stores high scores enabling students to gauge their
+                                        progress compared to their
+                                        peers. This application is deployed on GitHub.</p><br>
                                     <div class="buttonContainer">
                                         <button class="btn" style="box-shadow: 1px 1px #137bc0;"
                                             onclick="window.location.href=('https://onomatopoetica.github.io/code-quiz/');"
@@ -242,12 +245,21 @@
                     </li>
                     <li>
                         <a class="cell">
-                            <img class="img" src="./assets/projects/placeholder.png">
+                            <img class="img" src="./assets/projects/teamprofile.png">
                             <span class="overlay">
                                 <span class="text align-center">
-                                    <!-- <img class="rocket" src="./assets/artwork/rocket.png" alt="rocket"
-                                        width="120"><br>Launch
-                                    App<br> -->
+                                    <p><b>TEAM PROFILE GENERATOR</b></p><br>
+                                    <p class="project text-justify">A Node CLI takes in information about employees
+                                        + dynamically generates an HTML profile displying summaries for each
+                                        person. Jest runs
+                                        testing + Inquirer npm collects user input. The app runs in Terminal and cannot
+                                        be deployed to GitHub.</p><br>
+                                    <div class="buttonContainer d-flex justify-content-center">
+                                        <button class="btn" style="box-shadow: 1px 1px #137bc0;"
+                                            onclick="window.location.href=('https://github.com/onomatopoetica/team-profile-generator');"
+                                            target="_blank;">View
+                                            Code</button>
+                                    </div>
                                 </span>
                             </span>
                         </a>
@@ -328,14 +340,17 @@
                 <img class="w3-xlarge" src="./assets/skillsIcons/GitLab.png" alt="GitLab" width="50"><br>
             </div>
         </div>
-    </div>
 
-    <!-- Contact page -->
 
-    <div class="buttonContact text-center">
-        <a href="contact.html" target="_blank">
-            <img class="link" src="./assets/pages/heart.gif" width=150>
-        </a>
+        <!-- Contact page -->
+
+        <div class="buttonContact mt-5 text-center">
+            <h2 class="summary">See more including my recommendations, resume and fill out a request to connect! Just
+                click
+                the heart below.</h2>
+            <a href="contact.html" target="_blank"><img class="link" src="./assets/pages/heart.gif" width=200>
+            </a>
+        </div>
     </div>
     <br>
     <br>
@@ -344,7 +359,9 @@
     <!-- Footer -->
 
     <footer class="container-fluid text-center">
-        <div class="social">
+        <h3 class="footer">Follow Me!</h3><br>
+        <img src="./assets/pages/sea.png" height="100" style="opacity: 90%;"><br>
+        <div class="social mt-2"><br>
             <a id="socialGit" href="https://github.com/onomatopoetica" target="_blank"><i
                     class="fab fa-github fa-2x w3-text-purple mx-3 w3-hover-opacity"></i></a>
             <a id="socialLink" href="https://www.linkedin.com/in/jenbates/" target="_blank"><i
@@ -355,8 +372,8 @@
                     class="fab fa-unsplash fa-2x w3-text-black mx-3 w3-hover-opacity"></i></a>
         </div>
         <br>
-        <div class="madeWithLove" style="font-size: .85rem;">This portfolio was created with all the <i
-                class="fa fa-heart pulse" style="color: rgb(184, 5, 112);"></i> by <a class="onomatopoetica"
+        <div class="madeWithLove" style="font-size: .85rem;">Created with all the <i class="fa fa-heart pulse"
+                style="color: rgb(184, 5, 112);"></i> by <a class="onomatopoetica"
                 href="https://github.com/onomatopoetica" target="_blank">Onomatopoetica</a> in 2021!
         </div>
         <!-- End footer -->
@@ -369,6 +386,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
     <script src="script.js"></script>
 </body>
 

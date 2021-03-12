@@ -27,7 +27,7 @@ body {
 /* Typewriter effect */
 .typewriter p {
     color: #000;
-    width: 24em;
+    width: 25em;
     font-family: monospace;
     font-size: 2rem;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -43,7 +43,7 @@ body {
 /* Typing effect */
   @keyframes typing {
     from { width: 0 }
-    to { width: 24em }
+    to { width: 25em }
 }
   
 /* Typewriter cursor effect */
@@ -78,6 +78,9 @@ body {
 
 .summary {
     font-size: 17px;
+    margin-left: -15px;
+    margin-right: -15px;
+    text-align: justify;
 }
 
 a.onomatopoetica {
@@ -86,6 +89,7 @@ a.onomatopoetica {
 
 a.onomatopoetica:hover   {
     color: #82c5f2;
+    text-decoration: none;
 }
 
 /* All buttons */
@@ -99,9 +103,20 @@ a.onomatopoetica:hover   {
     color: #FFFFFF;
 }
 
-/* .skills, .tools {
-    background-color: #c799c7;   
-} */
+.jen {
+    color: #469ad2;
+    text-decoration: none;
+}
+
+.jen:hover {
+    color: #82c5f2;
+    text-decoration: none;
+}
+
+.card-header {
+    align-content: center;
+    box-shadow:0 0 12px rgba(0,0,0,0.6);
+}
 
 /* Back to top */
 .back-to-top, .back-to-top:focus, .back-to-top:visited {
@@ -140,8 +155,14 @@ a.back-to-top {
     opacity: 1;
 }
 
+.card-header {
+    border-radius: 50%;
+    box-shadow:0 0 12px rgba(0,0,0,0.6);
+}
+
 .footer {
     flex-shrink: 0;
+    color: #2f89c4;
 }
   
 /* Larger screens */
@@ -149,30 +170,14 @@ a.back-to-top {
     p.lead.subTitle {
         margin-top: 150px;
     }
-    
-    #projects li {
-        width:33%;
-    }
 
-    /* Overlay */
-    span.text {
-        font-size: 20px;
-        color: #FFFFFF;
-        text-align: center;
-        top: 25%;
+    .card-header {
+        width: 1000px;
     }
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        grid-gap: 20px;
-        padding: 100px;
-        grid-template-rows: 300px 300px;
-      }
 }
 
 /* Medium screens */
-@media (min-width: 800px) and (max-width: 1299px) {
+@media (min-width: 700px) and (max-width: 1299px) {
     .jumbotron {
         max-height: 300px;
         max-width: auto;
@@ -186,22 +191,14 @@ a.back-to-top {
     .typewriter p {
         font-size: 1.75rem;        
     }
-    
-    #projects li {
-        width:50%;
-    }
 
-    /* Overlay */
-    span.text {
-        font-size: 18px;
-        color: #FFFFFF;
-        text-align: center;
-        top: 30%;
+    .card-header {
+        width: 700px;
     }
 }
 
 /* Smaller screens */
-@media (max-width: 799px) {
+@media (max-width: 699px) {
     .jumbotron {
         max-height: 150px;
         max-width: auto;
@@ -211,44 +208,8 @@ a.back-to-top {
     .typewriter p {
         font-size: .90rem;
     }
-        
-    #projects li {
-        width:100%;
-    }
 
-    /* Overlay */
-    span.text {
-        font-size: 18px;
-        color: #FFFFFF;
-        text-align: center;
-        top: 30%;
-    } 
-
-    .grid-container {
-        display: grid;
-        grid-gap: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        padding: 40px;
-        grid-template-rows: 300px 300px 300px 300px;
-    }
-  
-      .item1 {
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-      
-      .item2 {
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-      
-      .item3 {
-        grid-row-start: 3;
-        grid-row-end: 4;
-    }
-  
-      .item4 {
-        grid-row-start: 4;
-        grid-row-end: 5;
+    .card-header {
+        width: 350px;
     }
 }
